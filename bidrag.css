@@ -1,0 +1,309 @@
+body {
+	font-family: helvetica;
+}
+
+main {
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.tekst {
+	line-height: 160%;
+}
+
+
+/*---Bokse---*/
+
+/* grid og flex */
+
+.thumbnail-grid {
+	user-select: none;
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: stretch;
+
+}
+
+.flex-item {
+	flex: 1 0 auto;
+	text-decoration: none;
+	color: #34435b;
+}
+
+.belob {
+	text-align: center;
+	text-decoration: none;
+	color:white;
+	font-size: 180%;
+	line-height: 1%;
+	padding-top: 12%;
+}
+
+/* Opsætning af figure-klassen med hover effekt */
+
+.thumbnail-grid figure {
+	position: relative;
+	min-width: 150px;
+	height: 150px;
+	margin: 2%;
+	border-radius: 15%;
+}
+
+
+/* Style alt (*) som en box med box-sizing */
+
+* {
+	box-sizing: border-box;
+
+}
+
+.thumbnail-grid figure.i1 {
+	background: #93c9ed;
+	border: 1px black solid;
+	background-size: cover
+}
+
+.thumbnail-grid figure.i2 {
+	background: #93c9ed;
+	border: 1px black solid;
+	background-size: cover
+}
+
+.thumbnail-grid figure.i3 {
+	background: #93c9ed;
+	border: 1px black solid;
+	background-size: cover
+}
+
+.thumbnail-grid figure.i4 {
+	background: #93c9ed;
+	border: 1px black solid;
+	background-size: cover
+}
+
+/* bokse-hover */
+
+.tooltip {
+	position: relative;
+	display: block;
+	text-align: center;
+	border-bottom: 1px black;
+	font-size: 80%;
+	text-decoration: none;
+
+
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 200px;
+	background-color: white;
+	color: black;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	line-height: 150%;
+	
+
+
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;   /* https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip */
+}
+
+
+/* form*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html {
+	background: white;
+}
+
+#feedback-page {
+	text-align: center;
+}
+
+#text-feedback {
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+	background-color: #93c9ed;
+	text-align: center;
+}
+
+#form-main {
+	width: 100%;
+	float: left;
+	padding-top: 30px;
+}
+
+#form-div {
+	background-color: #93c9ed;
+	border: #34435b solid 1px;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 35px;
+	padding-bottom: 50px;
+	width: 100%;
+	margin: 1%;
+	position: relative;
+	border-radius: 3%;
+
+}
+
+.feedback-input {
+	opacity: 0.9;
+	color: #f18e1c;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: white;
+	border: 1px solid #34435b;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 4%;
+
+}
+
+.feedback-input:focus {
+	background: #fff;
+	box-shadow: 0;
+	border: 1px solid;
+	color: #34435b;
+	outline: none;
+	padding: 13px 13px 13px 54px;
+}
+
+.focused {
+	color: #f18e1c;
+	border: #f18e1c solid 3px;
+}
+
+/* Icons ---------------------------------- */
+
+#name {
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus {
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email {
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus {
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+	width: 100%;
+	height: 150px;
+	line-height: 150%;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+	background-color: #f1f1f1;
+}
+
+#button-blue {
+	font-family: , Helvetica, Arial, sans-serif;
+	float: left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor: pointer;
+	background-color: #f18e1c;
+	color: #34435b;
+	font-size: 24px;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#button-blue:hover {
+	background-color: rgba(52, 69, 91, 0);
+	color: #34435b;
+}
+
+.submit:hover {
+	color: white;
+}
+
+.ease {
+	border-top: 3px #3c3c3c solid;
+	width: 0px;
+	height: 76px;
+	background-color: #93c9ed;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease {
+	width: 100%;
+	background-color: white;
+}
+
+
+
+@media only screen and (max-width: 580px) {
+	#form-div {
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+	main {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+}
+
+
+/* inspiration: http://www.venstre.dk/bliv-aktiv/giv-et-bidrag */
+
+
