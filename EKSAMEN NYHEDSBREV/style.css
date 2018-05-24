@@ -1,0 +1,50 @@
+/* Styling af tekst */
+h1,
+h2,
+p {
+    text-align: center;
+}
+
+/* Styling af link */
+a:link{
+    color: #92c9ed;
+}
+
+a:visited{
+    color: #354558;
+}
+
+a:hover{
+    color: #354558;
+}
+
+/*Styling af div indeholdende alt content */
+.nyhed {
+    padding-top: 5%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+}
+
+/* Styling af billede */
+.news{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+}
+
+/* Media querries tilpasset til mobilskærm */
+@media only screen and (max-width: 600px) {
+    .news{
+        width: 100%;
+    }
+    
+    h1{
+        font-size: 170%;
+    }
+    
+    h2{
+        font-size: 120%;
+    }
+}
