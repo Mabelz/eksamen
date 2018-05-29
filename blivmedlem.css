@@ -161,6 +161,7 @@ h10 {
 }
 
 /* Media querries tilpasset til mobilskærm*/
+
 @media screen and (max-width: 600px) {
     h10 {
         position: relative;
@@ -179,6 +180,7 @@ h10 {
 }
 
 /* Media querries tilpasset til mobilskærm*/
+
 @media screen and (max-width: 600px) {
     .photo img {
         width: 400px;
