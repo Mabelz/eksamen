@@ -2,7 +2,7 @@
 
 <!-- Denne attribut definerer sproget på siden -->
 <html lang="da">
-    
+
 <!--Dette meta tag fortæller browseren hvordan det skal håndtere sidens størrelse. "Width=device-witdh", betyder at bredden skal følge bredden på den device man benytter.-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,16 +13,15 @@
 <meta name="description" content="Er det godt for jorden? Giver det dig mere frihed uden at skade andre menneske, dyr eller natur? er det baseret på facts, kundskab og visdom? I så fald vil det som regel være JFK21's politik!">
 
 <!--søgeord til søgmaskiner-->
-<meta name="keywords" content="JFK21, parti, vælgererklæring, foredrag, eksamen, multimediedesign, erhvervsakademi Aarhus,">
+<meta name="keywords" content="JFK21, Parti, Vælgererklæring, Eksamen, multimediedesign, erhvervsakademi Aarhus, nyhedsbrev">
 
 <!-- Dette tag linker mit stylesheet til html filen-->
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="nyhedsbrev.css">
 
 <!--link til fonts-->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
-<!-- Dette angiver titlen på siden -->
-<title>Forsiden</title>
+<title>Nyhedsbrev</title>
 
 <head>
 
@@ -35,8 +34,7 @@
     <!--indholdet i navigationsbaren-->
     <div class="topnav" id="myTopnav">
         <div class="dropdown">
-            <button class="dropbtn"><a href="#">OM OS</a>
-             </button>
+            <button class="dropbtn"><a href="#">OM OS</a></button>
             <div class="dropdown-content">
                 <a href="personer.html">Personer</a>
                 <a href="voreshistorie.html">Vores historie</a>
@@ -44,16 +42,14 @@
                 <a href="#contact">Kontakt</a>
             </div>
         </div>
-
         <div class="dropdown">
             <button class="dropbtn"><a href="#">AKTUELT</a></button>
             <div class="dropdown-content">
                 <a href="events.html">Events</a>
                 <a href="kalender.html">Kalender</a>
-                <a href="nyhedsbrev.html">Nyhedsbrev</a>
+                <a href="#">Nyhedsbrev</a>
             </div>
         </div>
-
         <div class="dropdown">
             <button class="dropbtn"><a href="#">MÆRKESAGER</a></button>
             <div class="dropdown-content">
@@ -61,9 +57,7 @@
                 <a href="Maerkesager.html">Mærkesag 2.</a>
                 <a href="Maerkesager.html">Mærkesag 3.</a>
             </div>
-
         </div>
-
         <div class="dropdown">
             <button class="dropbtn"><a href="#">POLITIK</a></button>
             <div class="dropdown-content">
@@ -71,100 +65,77 @@
                 <a href="vaelgererklaering.html">Vælgererklæring</a>
             </div>
         </div>
+
         <!--indholdet af brugermenu-->
         <div style="padding-left:16px">
             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
-    </div>
 
-    <!--Skift mellem at tilføje og fjerne den responsive klasse til topnav, når brugeren klikker på ikonet-->
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
+        <!--Skift mellem at tilføje og fjerne den responsive klasse til topnav, når brugeren klikker på ikonet-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
             }
-        }
-    </script>
+        </script>
 
-    <!--Indholdet i slideshow-->
-    <div class="slideshow-container">
+        <!-- Dette er et div tag indeholdende alt content på side -->
+        <div class="nyhed">
 
-        <div class="mySlides fade">
-            <img src="img/slide1.png" alt="vaelgererlaekring" style="width:100%">
+            <!-- Det er en overskrift -->
+            <div class="tekst">
+
+                <img src="img/tilmeld.png" width="50%">
+            </div>
+
+            <br>
+            <br>
+
+            <!-- Dette er en underoverskrift -->
+            <h11>Hvis du ønsker løbende information omkring <br>partiet og hvad vi går og laver, så</h11>
+            <!-- Her linkes til siden hvor man kan tilmelde sig nyhedsbrevet -->
+
+            <div class="tilmeld">
+
+                <a href="http://jfk21.us13.list-manage.com/subscribe?u=8322f8c7499d0c11ea233bab4&id=b895b57887" target="_blank">tilmeld dig vores nyhedsbrev</a>
+                <br>
+                <br>
+            </div>
+
+            <!-- Dette er en brødtekst -->
+            <h12>Ved at tilmelde dig vores nyhedsbrev giver du samtidig en støtteerklæring til JFK21 Jorden Frihed Kundskab. En støtteerklæring angiver,at du muligvis er interesseret i at <br>støtte partiet
+                - men du er selvfølgelig ikke bundet op på noget. Efter godt en uge vil du <br> modtage en mail
+                fra noreply@vælgererklæring.dk, og hvis du mener, partiet bør kunne stille <br> op til næste valg,
+                skal du følge anvisningerne denne mail. Du skal logge ind via NEMID <br>og herefter afgive en 
+                vælgererklæring. Det hele tager ca. 1 minut.</h12>
+            <br>
+            <br>
+            <h12>Vi håber at du vil hjælpe os med at indsamle 20.000 vælgererklæringer, så vi kan blive </h12>
+            <br>
+            <h12>berettiget til at stille op til folketingsvalget.</h12>
+
+            <br>
+
+            <!-- Dette er et billede tilknyttet siden -->
+            <img class="news" src="img/news.png" alt="nyhedsbrev" width="100%" height="550">
         </div>
 
-        <div class="mySlides fade">
-            <img src="img/slide2.png" alt="foredrag" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-            <img src="img/slide3.png" alt="jfk21" style="width:100%">
-        </div>
-
-    </div>
-    <br>
-
-    <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
-    <!--Javasript til slideshow. Viser hvor meget sekunder i timen hvor mange slid der køre-->
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active"
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-    </script>
-
-
-    <!-- call to action knapper-->
-    <div class="calltoaction">
-        <a href="vaelgererklaering.html">
-            <div id="orange">Vælgererklæring</div>
-        </a>
-        <a href="blivmedlem.html">
-            <div id="bla">Bliv medlem</div>
-        </a>
-        <a href="bidrag.html">
-            <div id="gron">Giv et bidrag</div>
-        </a>
-
-    </div>
-
-    <div class="tese">
-        <img src="img/teseforsideNY.png" alt="tese" width="100%">
     </div>
 </body>
 <!--indhold af footer-->
 <footer>
+
     <!--Indhold af alt i hver flex-container-->
     <div class="flex-container">
         <div>
-
             <a name="contact">
                 <h1>Kontakt os</h1>
             </a>
+
             <div class="box">
                 <h2>Pilestræde 58, 1112 København K</h2>
                 <h3>Info@JFK21.dk</h3>
@@ -213,7 +184,7 @@
 
             <a href="blivmedlem.html">
                 <div id="example2">
-                    <h8>Blive medlem</h8>
+                    <h8>Bliv medlem</h8>
                 </div>
             </a>
 

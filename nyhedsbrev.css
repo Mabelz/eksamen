@@ -1,14 +1,10 @@
-/*tilpas hele skærmen*/
+/*indhold af hele skærmen*/
 
 body {
     margin: 0;
     padding: 0;
     margin-bottom: 200px;
-}
 
-main {
-    margin-left: 3%;
-    margin-right: 3%;
 }
 
 /*style logo*/
@@ -39,6 +35,7 @@ main {
     border-bottom: 3px solid transparent;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+
 }
 
 /*brugermenuen*/
@@ -100,7 +97,7 @@ main {
     display: block;
 }
 
-/* Media querries tilpasset til mobilskærm. navigationsbar*/
+/* Media querries tilpasset til mobilskærm dropdown*/
 
 @media screen and (max-width: 800px) {
     .topnav a:not(:first-child),
@@ -114,7 +111,7 @@ main {
     }
 }
 
-/* Media querries tilpasset til mobilskærm*/
+/* Media querries tilpasset til mobilskærm navigationsbar */
 
 @media screen and (max-width: 600px) {
     .topnav.responsive {
@@ -149,144 +146,128 @@ main {
     }
 }
 
-/*style af hele slideshow*/
+/* Styling af tekst billede */
 
-* {
-    box-sizing: border-box;
-}
-
-.mySlides {
-    display: none;
-}
-
-img {
-    vertical-align: middle;
-}
-
-/* Slideshow container */
-
-.slideshow-container {
-    max-width: 1195px;
+.tekst img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
-    margin: auto;
-    z-index: -1;
-    top: 20%;
+    left: 2%;
+    top: 70px;
+    text-align: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
-.active {
-    background-color: #717171;
-}
+/* Media querries tilpasset til mobilskærm */
 
-/* Fading animation */
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 100s;
-    animation-name: fade;
-    animation-duration: 0.5s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
+@media screen and (max-width: 600px) {
+    .tekst img {
+        position: relative;
+        width: 110%;
+        left: 5%;
     }
 }
 
-@keyframes fade {
-    from {
-        opacity: .4
+h11 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50px;
+    left: 3%;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.tilmeld a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 40px;
+    right: 32%;
+    font-size: 25px;
+    text-decoration: underline;
+    color: #93c9ed;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+/* Media querries tilpasset til mobilskærm */
+
+@media screen and (max-width: 600px) {
+
+    .tilmeld a {
+        position: relative;
+        left: 30%;
+        width: 350px;
     }
-    to {
-        opacity: 1
-    }
+}
+
+h12 {
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 80px;
+    left: 20%;
+    text-align-last: center;
+    font-size: 100%;
+    line-height: 160%;
+    top: 80px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 /* Media querries tilpasset til mobilskærm*/
 
-@media only screen and (max-width: 300px) {
-    .text {
-        font-size: 11px
+@media screen and (max-width: 600px) {
+
+    h12 {
+        position: relative;
+        left: 10%;
+        top: 50px;
     }
 }
 
-/* Media querries tilpasset til mobilskærm*/
+/*Styling af div indeholdende alt content */
 
-@media only screen and (max-width: 300px) {
-    .prev,
-    .next,
-    .text {
-        font-size: 11px
+.nyhed {
+    padding-top: 5%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+}
+
+/* Styling af billede */
+
+.news {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 130px;
+    left: 30px;
+    border-radius: 10%;
+}
+
+/* Media querries tilpasset til mobilskærm */
+
+@media screen and (max-width: 600px) {
+
+    .news {
+        position: relative;
+        left: 1%;
+        top: 70px;
+        height: 300%;
+        width: 115%;
     }
-}
-
-/*style call to action*/
-
-.calltoaction {
-    display: grid;
-    position: relative;
-    top: 20px;
-    grid-gap: 3%;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
-    grid-auto-rows: 10%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-}
-
-#orange {
-    background-color: #ed9d3f;
-    font-size: 20px;
-    margin: 2%;
-    padding-left: 22%;
-    padding-top: 7%;
-    padding-bottom: 7%;
-    border-radius: 10%;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-}
-
-
-#bla {
-    background-color: #94ceea;
-    font-size: 20px;
-    padding-left: 29%;
-    margin: 2%;
-    padding-top: 7%;
-    padding-bottom: 7%;
-    border-radius: 10%;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-}
-
-
-#gron {
-    background-color: #bdc546;
-    font-size: 20px;
-    padding-left: 29%;
-    padding-top: 7%;
-    margin: 2%;
-    padding-bottom: 7%;
-    border-radius: 10%;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-}
-
-}
-
-/*fjerning af underlinje på tekst i sidste flex-container*/
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.tese img {
-    position: relative;
-    top: 90px;
-    margin-left: 3%;
-    width: 94%;
 }
 
 /*fjerning af underlinje på tekst i sidste flex-container*/
@@ -300,7 +281,7 @@ a {
 
 .flex-container {
     position: relative;
-    top: 150px;
+    top: 10px;
     width: 100%;
     display: flex;
     background-color: #354558;
@@ -308,7 +289,7 @@ a {
 }
 
 .flex-container > div {
-    width: 400px;
+    width: 150px;
     height: 1px;
     margin: 10px;
     padding: 120px;
@@ -347,7 +328,7 @@ h2 {
     top: 15px;
     left: 45px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 h3 {
@@ -356,7 +337,7 @@ h3 {
     top: 20px;
     left: 45px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 h4 {
@@ -365,7 +346,7 @@ h4 {
     top: 20px;
     left: 45px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 /*ikoner----------------------*/
@@ -373,21 +354,21 @@ h4 {
 .icons img {
     width: 25px;
     position: relative;
-    top: -230px;
+    top: -225px;
     right: 90px;
 }
 
 .letter img {
     width: 25px;
     position: relative;
-    top: -235px;
+    top: -228px;
     right: 90px;
 }
 
 .world img {
     width: 25px;
     position: relative;
-    top: -243px;
+    top: -235px;
     right: 90px;
 }
 
@@ -401,21 +382,21 @@ h4 {
 .insta img {
     width: 50px;
     position: relative;
-    top: -180px;
+    top: -189px;
     right: 93px;
 }
 
 .you img {
     width: 50px;
     position: relative;
-    top: -233px;
+    top: -249px;
     right: 54px;
 }
 
 .linkedin img {
     width: 60px;
     position: relative;
-    top: -288px;
+    top: -310px;
     right: 22px;
 }
 

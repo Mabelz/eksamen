@@ -1,0 +1,600 @@
+
+/*indhold af hele skærmen*/
+body {
+ margin: 0px;
+ padding: 0; 
+    
+}
+main {
+    margin-left: 5%;
+    margin-right: 5%;
+ 
+}
+
+/*style logo*/
+.logo {
+  margin-left: 45px;
+  margin-top: 20px;
+}
+
+/*navigationsbar*/
+.topnav {
+  position: relative;
+  top: -69px;
+  right: 30px;
+}
+
+/*indholdet af navigationsbaren*/
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  position: relative;
+  border-bottom: 3px solid transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+/*brugermenuen*/
+.topnav .icon {
+  display: none;
+    
+}
+
+/*ændring af dropdown stilling*/
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+/*indholdet af dropdown menuen*/
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 30px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0; 
+}
+
+/*style til dropdown-content*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/*style til indholdet af dropdown*/
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+/*style hover til navigationsbaren*/
+.topnav a:hover {
+    border-bottom: 3px solid #93c9ed; 
+}
+
+.dropdown:hover .dropdown-content {
+     display: block;
+}
+
+/*responsive dropdown*/
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+     display: none; 
+}
+    
+.topnav a.icon {
+     float: right;
+     display: block;
+  }
+}
+
+/*responsive navigationsbar*/
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+     position: absolute;
+     right: 0;
+     top: 0;   
+}
+
+.topnav.responsive a {
+     float: none;
+     display: block;
+     text-align: center;
+     padding: 10px;
+}
+    
+.topnav.responsive .dropdown {float: none;}
+.topnav.responsive .dropdown-content {position: relative;}
+.topnav.responsive .dropdown .dropbtn {
+     display: block;
+     width: 100%;
+     text-align: left;
+     padding: 30px;
+     position: relative;
+     top: 40px;
+  }
+}
+
+
+/*style til overskrift*/
+h10 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 25%;
+    top: 50px;
+    width: 120%;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/*responsiv screen til overskrift*/
+@media screen and (max-width: 600px){
+    
+ h10 {
+    position: relative;
+    left: 5%;
+     top: px;
+     font-size: 20px;
+    }
+}
+
+
+/*billede style*/
+.info {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    right:2%;
+    top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .info {
+        position: relative;
+        top: 60px;
+    }
+}
+
+/*tekst style*/
+h11 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/*tekst liste*/
+h11, .list {
+    text-align: left;
+    list-style-position: inside;
+    font-size: 1em;  
+    padding-left: 20%;
+    padding-right: 20%;
+    display: block; 
+    position: relative;
+    top: 70px;
+    line-height: 140%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 600px){
+    h11, .list {
+        width: 380px;
+        position: relative;
+        right: 80px;
+        top: 100px;
+    }
+}
+
+/*formular fundet på nedenstående link*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/*indhold af formular*/
+#feedback-page {
+    text-align: center;
+}
+
+#text-feedback {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: white;
+    text-align: center;
+}
+
+/*style til formular*/
+#form-main {
+    width: 100%;
+    position: relative;
+    right: 60px;
+    padding-top: 80px;
+}
+
+@media screen and (max-width: 600px) {
+    #form-main {
+        position: relative;
+        left: 1%;
+        top: 30px; 
+    }
+}
+
+/*styling af hele formular*/
+#form-div {
+    background-color: #93c9ed;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    width: 550px;
+    float: center;
+    left: 47%;
+    position: absolute;
+    margin-left: -260px;
+}
+
+/*styling til indeholdet af formular*/
+.feedback-input {
+    opacity: 0.9;
+    color: #f18e1c;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 0;
+    line-height: 22px;
+    background-color: #fbfbfb;
+    border: 3px solid #fbfbfb;
+    padding: 13px 13px 13px 54px;
+    margin-bottom: 10px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.feedback-input:focus {
+    background: #fff;
+    box-shadow: 0;
+    border: 3px solid #f18e1c;
+    color: #f18e1c;
+    outline: none;
+    padding: 13px 13px 13px 54px;
+}
+
+/*style submit knap*/
+.focused {
+    color: #f18e1c;
+    border: #f18e1c solid 3px;
+}
+
+/* ikoner ---------------------------------- */
+
+#name {
+    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#name:focus {
+    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    background-size: 30px 30px;
+    background-position: 8px 5px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#email {
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#email:focus {
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#comment {
+    background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+/*space/størrelse omkring tekst*/
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+}
+
+/*style hover effekt til tekst indhold*/
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+background-color: white;
+}
+
+/* style til submit knap*/
+#button-blue {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    float: left;
+    width: 100%;
+    border: #fbfbfb solid 4px;
+    cursor: pointer;
+    background-color: #f18e1c;
+    color: white;
+    font-size: 24px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+#button-blue:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #0493bd;
+}
+
+.submit:hover {
+    color: #93c9ed;
+}
+
+/*styling til overgangseffekt*/
+.ease {
+    border-top: 3px #3c3c3c solid;
+    width: 0px;
+    height: 76px;
+    background-color: #fbfbfb;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.submit:hover .ease {
+    width: 100%;
+    background-color: white;
+}
+
+/* Media querries tilpasset til mobilskærm */
+@media only screen and (max-width: 580px) {
+    #form-div {
+        left: 3%;
+        margin-right: 3%;
+        width: 88%;
+        margin-left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+
+/*fjerning af underlinje på tekst i sidste flex-container*/
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*style til flex-container*/
+
+.flex-container {
+    position: relative;
+    top: 650px;
+    width: 100%;
+    display: flex;
+    background-color: #354558;
+    flex-wrap: wrap;
+}
+
+.flex-container > div {
+    width: 160px;
+    height: 1px;
+    margin: 10px;
+    padding: 120px;
+    font-size: 30px;
+    flex-wrap: wrap;
+}
+
+/*box som ligger i den første flex-container*/
+
+.box {
+    width: 270px;
+    height: 110px;
+    position: relative;
+    right: 100px;
+    top: -120px;
+    background-color: white;
+    border-radius: 5%;
+}
+
+/*tekst styling*/
+
+h1 {
+    font-size: 20px;
+    width: 160px;
+    position: relative;
+    right: 100px;
+    top: -120px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 11px;
+    position: relative;
+    top: 15px;
+    left: 45px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 11px;
+    position: relative;
+    top: 20px;
+    left: 45px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 11px;
+    position: relative;
+    top: 20px;
+    left: 45px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/*ikoner----------------------*/
+
+.icons img {
+    width: 25px;
+    position: relative;
+    top: -225px;
+    right: 90px;
+}
+
+.letter img {
+    width: 25px;
+    position: relative;
+    top: -233px;
+    right: 90px;
+}
+
+.world img {
+    width: 25px;
+    position: relative;
+    top: -238px;
+    right: 90px;
+}
+
+.face img {
+    width: 50px;
+    position: relative;
+    top: -133px;
+    right: 125px;
+}
+
+.insta img {
+    width: 50px;
+    position: relative;
+    top: -190px;
+    right: 93px;
+}
+
+.you img {
+    width: 50px;
+    position: relative;
+    top: -250px;
+    right: 54px;
+}
+
+.linkedin img {
+    width: 60px;
+    position: relative;
+    top: -310px;
+    right: 22px;
+}
+
+/* styling til underpunkterne i sidste flex-container*/
+#example1 {
+    width: 350px;
+    height: 40px;
+    position: relative;
+    top: -120px;
+    right: 110px;
+    font-size: 15px;
+    background-color: #ed9d3f;
+    border-radius: 20px;
+}
+
+h7 {
+    position: relative;
+    top: 8px;
+    left: 95px;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+#example2 {
+    width: 350px;
+    height: 40px;
+    position: relative;
+    top: -95px;
+    right: 110px;
+    font-size: 20px;
+    background-color: #94ceea;
+    border-radius: 20px;
+}
+
+h8 {
+    position: relative;
+    top: 8px;
+    left: 115px;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+#example3 {
+    width: 350px;
+    height: 40px;
+    position: relative;
+    top: -70px;
+    right: 110px;
+    font-size: 20px;
+    background-color: #bdc546;
+    border-radius: 20px
+}
+
+h9 {
+    position: relative;
+    top: 8px;
+    left: 120px;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}

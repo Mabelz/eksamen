@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<!--sprog-->
+<html lang="da">
+
+<!--visningsporten for at få dit website til at se godt ud på alle enheder-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--repræsentere hvert tegn-->
+<meta charset="utf-8">
+
+<!--beskrivelse af websitet-->
+<meta name="description" content="Er det godt for jorden? Giver det dig mere frihed uden at skade andre menneske, dyr eller natur? er det baseret på facts, kundskab og visdom? I så fald vil det som regel være JFK21's politik!">
+
+<!--søgeord til søgmaskiner-->
+<meta name="keywords" content="JFK21, Parti, mærkesager, Eksamen, multimediedesign, erhvervsakademi Aarhus">
+
+<!--link til CSS-->
+<link rel="stylesheet" type="text/css" href="Maerkesager.css">
+
+<!--link til fonts-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+<!-- Dette angiver titlen på siden -->
+<title>Mærkesager</title>
+<head>
+
+
+    <!--logo placeret i headeren-->
+    <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo" width="180"></a></div>
+
+</head>
+
+<body>
+    <!--indholdet i navigationsbaren-->
+    <div class="topnav" id="myTopnav">
+        <div class="dropdown">
+            <button class="dropbtn"><a href="#">OM OS</a></button>
+            <div class="dropdown-content">
+                <a href="personer.html">Personer</a>
+                <a href="voreshistorie.html">Vores historie</a>
+                <a href="blivmedlem.html">Bliv medlem</a>
+                <a href="#contact">Kontakt</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn"><a href="#">AKTUELT</a></button>
+            <div class="dropdown-content">
+                <a href="events.html">Events</a>
+                <a href="kalender.html">Kalender</a>
+                <a href="nyhedsbrev.html">Nyhedsbrev</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn"><a href="#">MÆRKESAGER</a></button>
+            <div class="dropdown-content">
+                <a href="#mærkesag 1.">Mærkesag 1.</a>
+                <a href="#mærkesag 2.">Mærkesag 2.</a><a href="#mærkesag 3.">Mærkesag 3.</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn"><a href="#">POLITIK</a></button>
+            <div class="dropdown-content">
+                <a href="parti.html">Partiprogram</a>
+                <a href="vaelgererklaering.html">Vælgererklæring</a>
+            </div>
+        </div>
+
+        <!--indholdet af brugermenu-->
+        <div style="padding-left:16px">
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <!--Skift mellem at tilføje og fjerne den responsive klasse til topnav, når brugeren klikker på ikonet-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+
+        <main>
+
+            <!-- mærkesag 1 -->
+            <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal -->
+
+
+            <div class="tekst"><img class="banner" src="img/1.png" alt="rettigheder" width="100%">
+
+
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn">Se video</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+
+                        <iframe id="video" src="https://www.youtube.com/embed/NebvLMoOZCw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        
+                    </div>
+                </div>
+                <a name="mærkesag 1.">
+                    <p><b class="sag1">Mærkesag 1</b></p>
+                </a>
+                <ul>
+                    <li>Vi ønsker at ”sætte pengene fri”. Dette ved at have en folkeejet nationalbank. Staten udsteder landets penge gældfrit og uden renter (DKK 80 Mia pr år). Alle borgere får herved en konto og en aktie direkte i en Folkeejet Nationalbank. </li>
+                    <li>Statens indtjening ved at udstede landets penge (DKK 80 Mia) fordeles ligeligt til befolkningen i form af borgerdividende. 2% af BNP (DKK 2.000Mia 2015) skabt som vækst plus 2% skabt som inflation. I alt ca. DKK 1.200 pr måned per dansker - børn og voksne.</li>
+                    <li> Penge skabt som gæld af bankerne (ca. DKK 1.045 Mia) omlægges til Statslige penge over 12 år (DKK 87 Mia pr år i 12 år) og udbetales som borgerdividende direkte til borgernes konto i den Folkeejede Nationalbank. I alt ca. DKK 1.300 pr måned per dansker - børn og voksne. (I 12 år indtil alle de bank producerede penge som gæld med rente er konverteret til Statslige rentefrie penge uden gæld).</li>
+                    <li>Finanstilsynet gøres uafhængigt af økonomiske interesser og må ikke høre under og ej heller finansieres af banksektoren. Desuden vedtages at et flertal i Finanstilsynet kommer fra sektorer udenfor banksektoren.
+                        <li>Pengeskabelsen skal komme alle ligeligt til gode". Vi har beregnet det konservativt til kr 2.500 per borger per måned, skattefrit.</li>
+                        <li>Ideen er baseret på Frossti Sigurjonsson rapport på Island. Læs rapporten
+                            <div class="rapport">
+                                <a href="https://www.stjornarradid.is/media/forsaetisraduneyti-media/media/Skyrslur/monetary-reform.pdf" target="_blank"> her.</a>
+                            </div>
+                        </li>
+                </ul>
+            </div><br><br>
+
+
+            <!-- mærkesag 2 -->
+            <div class="tekst"><img class="banner" src="img/2.png" alt="pengeskabelsen" width="100%">
+
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn2">Se video</button>
+
+                <!-- The Modal -->
+                <div id="myModal2" class="modal2">
+
+                    <!-- Modal content -->
+                    <div class="modal-content2">
+                        <span class="close2">&times;</span>
+
+                        <iframe src="https://www.youtube.com/embed/SoAtg0OuKiM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+                <a name="mærkesag 2."> </a>
+                <p><b class="sag2">Mærkesag 2</b>
+                    <p>
+
+                        <ul>
+                            <li>Mennesker må ikke betale renter.</li>
+                            <li>Man må gerne modtage renter fra virksomheder. (Danskere betalte DKK 200 mia. i renter, bidrag og gebyrer i 2013). Det står fortsat virksomheder frit for at vælge, hvorledes et økonomisk afkast fordeles mellem investorerne, som enten variabel dividende + potentielle kursstigninger eller fast rente. Hvis mennesker kautionerer for et firma, kan man ikke hæfte for den del, der går til renter.</li>
+                            <li>En ny Folkeejet Nationalbank udsteder rentefrie realkreditlån til alle fysiske personer/mennesker. F.eks 90% op til en mio, 80% op til 2 mio og 70% for alt over 2 mio. Et realkreditlån på DKK 2.000.000 vil over 30 år koste DKK 5.555 per måned. Ved tilstrækkelig friværdi vil det være muligt at få afdragsfrihed i en periode, f.eks. i tilfælde af arbejdsløshed.</li>
+                            <li> Virksomheder/fiktive personer finansieres fortsat på markedsvilkår.
+                                <li>Den folkeejede Nationalbank kan også udstede billån og kassekredit efter nærmere definerede formler/regler. F.eks. 30% udbetaling i billån og 1 – 3 gange månedsløn kassekredit, hvis god kreditvurdering og accept af modregning i borgerdividende.</li>
+                                <li>Mængden af kontanter i samfundet fordobles med DKK 10 Mia om året i 5 år. Indtjeningen herfra (i alt DKK 50 Mia) tilføres Finansministeriet. Virksomheder må gerne modtage kontanter, men ikke bruge kontanter i samfundet. Dette tiltag forventes ønskeligt på grund af stærkt forøget vækst for mindre virksomheder i den private sektor.</li>
+                        </ul>
+            </div><br><br>
+
+            <!-- mærkesag 3 -->
+            <div class="tekst"><img class="banner" src="img/3.png" alt="bolig" width="100%">
+
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn3">Se video</button>
+
+                <!-- The Modal -->
+                <div id="myModal3" class="modal3">
+
+                    <!-- Modal content -->
+                    <div class="modal-content3">
+                        <span class="close3">&times;</span>
+
+                        <iframe src="https://www.youtube.com/embed/68NBLqZ8uy8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+                    </div>
+                </div>
+                <a name="mærkesag 3.">
+                    <p><b class="sag3">Mærkesag 3 </b></p>
+                </a>
+                <ul>
+                    <li>Det skal være en menneskeret at have et sted at bo. Staten/kommunen/sognet stiller en rimelig bolig til rådighed om nødvendigt.</li>
+                    <li>Der har været enorme værdistigninger på fast ejendom, som har givet enorme økonomiske gevinster til både privatpersoner, private og offentlige virksomheder og det offentlige. Men ikke alle har nydt godt af disse økonomiske gevinster. Oftest er det netop de hjemløse, som ikke har fået del i disse samfundsskabte gevinster. Hvordan kan det være, at et land som Danmark ikke er i stand til at sikre alle borgere et sted at bo? Selvfølgelig har Danmark råd til det. Det burde ikke tage mange måneder at bygge de relativt få ekstra boliger, der skal til.</li>
+                    <li>Det bør simpelthen være således, at enhver borger kan henvende sig til kommunen og sige, de er boligløse. Det bør være helt irrelevant og uvedkommende for det offentlige om boligmanglen, skyldes skilsmisse, at man er 18 år og myndig eller andet.</li>
+                </ul>
+            </div>
+            <br><br>
+        </main>
+    </div>
+
+    <!--link til javascript filen-->
+    <script src="script.js"></script>
+</body>
+<!--indhold af footer-->
+<footer>
+
+    <!--Indhold af alt i hver flex-container-->
+    <div class="flex-container">
+        <div>
+            <a name="contact">
+                <h1>Kontakt os</h1>
+            </a>
+
+            <div class="box">
+                <h2>Pilestræde 58, 1112 København K</h2>
+                <h3>Info@JFK21.dk</h3>
+                <h4>www.JFK21.dk</h4>
+            </div>
+
+            <div class="flexbox">
+            </div>
+            <div class="icons">
+                <img src="img/homeicon.png" alt="hjem"></div>
+            <div class="letter">
+                <img src="img/lettericon.png" alt="brev"></div>
+            <div class="world">
+                <img src="img/worldicon.png" alt="jorden"></div>
+        </div>
+
+        <div>
+            <h1>Følg os</h1>
+
+         <a href="https://www.facebook.com/jfk21/?hc_ref=ARSrFvU66lbJINMlfmO6DTpr__Y7yvLk83aFvIL6pcGneiyu4LDF0qZWphpfavsO7Pw&fref=nf/" target="_blank">
+                <div class="face">
+                    <img src="img/faceicon.png" alt="facebook"></div>
+            </a>
+            <a href="https://www.instagram.com/palsvig/" target="_blank">
+                <div class="insta">
+                    <img src="img/instaicon.png" alt="instagram"></div>
+            </a>
+            <a href="https://www.youtube.com/channel/UC63niCOiJmpPgBcLk2D9wmA/" target="_blank">
+                <div class="you">
+                    <img src="img/youicon.png" alt="youtube"></div>
+            </a>
+            <a href="https://www.linkedin.com/in/mads-palsvig-50b6291/" target="_blank">
+                <div class="linkedin">
+                    <img src="img/linkedin.png" alt="linkedin"></div>
+            </a>
+        </div>
+        <div>
+            <h1>Klik her for at </h1>
+
+            <a href="vaelgererklaering.html">
+                <div id="example1">
+
+                    <h7>Giv vælgererklæring</h7>
+                </div>
+            </a>
+
+            <a href="blivmedlem.html">
+                <div id="example2">
+                    <h8>Bliv medlem</h8>
+                </div>
+            </a>
+
+            <a href="bidrag.html">
+                <div id="example3">
+                    <h9>Giv et bidrag</h9>
+                </div>
+            </a>
+        </div>
+    </div>
+</footer>
+
+</html>
+
+
+

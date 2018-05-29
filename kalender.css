@@ -1,14 +1,9 @@
-/*tilpas hele skærmen*/
+/*indhold af hele skærmen*/
 
 body {
-    margin: 0;
+    margin: 0px;
     padding: 0;
-    margin-bottom: 200px;
-}
 
-main {
-    margin-left: 3%;
-    margin-right: 3%;
 }
 
 /*style logo*/
@@ -68,7 +63,7 @@ main {
     margin: 0;
 }
 
-/*styling til dropdown-content*/
+/*style til dropdown-content*/
 
 .dropdown-content {
     display: none;
@@ -79,7 +74,7 @@ main {
     z-index: 1;
 }
 
-/*styling til indholdet af dropdown*/
+/*style til indholdet af dropdown*/
 
 .dropdown-content a {
     float: none;
@@ -100,7 +95,7 @@ main {
     display: block;
 }
 
-/* Media querries tilpasset til mobilskærm. navigationsbar*/
+/*responsive dropdown*/
 
 @media screen and (max-width: 800px) {
     .topnav a:not(:first-child),
@@ -114,7 +109,7 @@ main {
     }
 }
 
-/* Media querries tilpasset til mobilskærm*/
+/*responsive navigationsbar*/
 
 @media screen and (max-width: 600px) {
     .topnav.responsive {
@@ -149,145 +144,7 @@ main {
     }
 }
 
-/*style af hele slideshow*/
 
-* {
-    box-sizing: border-box;
-}
-
-.mySlides {
-    display: none;
-}
-
-img {
-    vertical-align: middle;
-}
-
-/* Slideshow container */
-
-.slideshow-container {
-    max-width: 1195px;
-    position: relative;
-    margin: auto;
-    z-index: -1;
-    top: 20%;
-}
-
-.active {
-    background-color: #717171;
-}
-
-/* Fading animation */
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 100s;
-    animation-name: fade;
-    animation-duration: 0.5s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-/* Media querries tilpasset til mobilskærm*/
-
-@media only screen and (max-width: 300px) {
-    .text {
-        font-size: 11px
-    }
-}
-
-/* Media querries tilpasset til mobilskærm*/
-
-@media only screen and (max-width: 300px) {
-    .prev,
-    .next,
-    .text {
-        font-size: 11px
-    }
-}
-
-/*style call to action*/
-
-.calltoaction {
-    display: grid;
-    position: relative;
-    top: 20px;
-    grid-gap: 3%;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
-    grid-auto-rows: 10%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-}
-
-#orange {
-    background-color: #ed9d3f;
-    font-size: 20px;
-    margin: 2%;
-    padding-left: 22%;
-    padding-top: 7%;
-    padding-bottom: 7%;
-    border-radius: 10%;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-}
-
-
-#bla {
-    background-color: #94ceea;
-    font-size: 20px;
-    padding-left: 29%;
-    margin: 2%;
-    padding-top: 7%;
-    padding-bottom: 7%;
-    border-radius: 10%;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-}
-
-
-#gron {
-    background-color: #bdc546;
-    font-size: 20px;
-    padding-left: 29%;
-    padding-top: 7%;
-    margin: 2%;
-    padding-bottom: 7%;
-    border-radius: 10%;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-}
-
-}
-
-/*fjerning af underlinje på tekst i sidste flex-container*/
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.tese img {
-    position: relative;
-    top: 90px;
-    margin-left: 3%;
-    width: 94%;
-}
 
 /*fjerning af underlinje på tekst i sidste flex-container*/
 
@@ -300,7 +157,7 @@ a {
 
 .flex-container {
     position: relative;
-    top: 150px;
+    top: 50px;
     width: 100%;
     display: flex;
     background-color: #354558;
@@ -308,7 +165,7 @@ a {
 }
 
 .flex-container > div {
-    width: 400px;
+    width: 160px;
     height: 1px;
     margin: 10px;
     padding: 120px;
@@ -346,8 +203,9 @@ h2 {
     position: relative;
     top: 15px;
     left: 45px;
+    color: black;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 h3 {
@@ -355,8 +213,9 @@ h3 {
     position: relative;
     top: 20px;
     left: 45px;
+    color: black;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 h4 {
@@ -364,8 +223,9 @@ h4 {
     position: relative;
     top: 20px;
     left: 45px;
+    color: black;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 /*ikoner----------------------*/
@@ -373,21 +233,21 @@ h4 {
 .icons img {
     width: 25px;
     position: relative;
-    top: -230px;
+    top: -225px;
     right: 90px;
 }
 
 .letter img {
     width: 25px;
     position: relative;
-    top: -235px;
+    top: -230px;
     right: 90px;
 }
 
 .world img {
     width: 25px;
     position: relative;
-    top: -243px;
+    top: -238px;
     right: 90px;
 }
 
@@ -401,21 +261,21 @@ h4 {
 .insta img {
     width: 50px;
     position: relative;
-    top: -180px;
+    top: -190px;
     right: 93px;
 }
 
 .you img {
     width: 50px;
     position: relative;
-    top: -233px;
+    top: -250px;
     right: 54px;
 }
 
 .linkedin img {
     width: 60px;
     position: relative;
-    top: -288px;
+    top: -313px;
     right: 22px;
 }
 
@@ -480,3 +340,11 @@ h9 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
+
+.kalender {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+

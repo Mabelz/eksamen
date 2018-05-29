@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 
-<!-- Denne attribut definerer sproget på siden -->
+<!--sprog-->   
 <html lang="da">
     
-<!--Dette meta tag fortæller browseren hvordan det skal håndtere sidens størrelse. "Width=device-witdh", betyder at bredden skal følge bredden på den device man benytter.-->
+<!--visningsporten for at få dit website til at se godt ud på alle enheder-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Charset atributten angiver tegnkodningen i dokumentet, hvilket gør at vi også kan benytte tegnene Æ og Ø -->
+<!--repræsentere hvert tegn-->
 <meta charset="utf-8">
 
 <!--beskrivelse af websitet-->
 <meta name="description" content="Er det godt for jorden? Giver det dig mere frihed uden at skade andre menneske, dyr eller natur? er det baseret på facts, kundskab og visdom? I så fald vil det som regel være JFK21's politik!">
 
 <!--søgeord til søgmaskiner-->
-<meta name="keywords" content="JFK21, parti, vælgererklæring, foredrag, eksamen, multimediedesign, erhvervsakademi Aarhus,">
+<meta name="keywords" content="JFK21, Parti, Vælgererklæring, Eksamen, multimediedesign, erhvervsakademi Aarhus">
 
-<!-- Dette tag linker mit stylesheet til html filen-->
-<link rel="stylesheet" type="text/css" href="style.css">
+<!--link til CSS-->
+<link rel="stylesheet" type="text/css" href="vaelgererklaering.css">
 
 <!--link til fonts-->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
 <!-- Dette angiver titlen på siden -->
-<title>Forsiden</title>
+<title>vælgererklæring</title>
 
 <head>
 
     <!--logo placeret i headeren-->
-    <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo" width="180"></a></div>
+    <div class="logo"><a href="index.html"><img src="img/logo.png" width="180"></a></div>
 
 </head>
 
@@ -35,8 +35,7 @@
     <!--indholdet i navigationsbaren-->
     <div class="topnav" id="myTopnav">
         <div class="dropdown">
-            <button class="dropbtn"><a href="#">OM OS</a>
-             </button>
+            <button class="dropbtn"><a href="#">OM OS</a></button>
             <div class="dropdown-content">
                 <a href="personer.html">Personer</a>
                 <a href="voreshistorie.html">Vores historie</a>
@@ -55,116 +54,104 @@
         </div>
 
         <div class="dropdown">
-            <button class="dropbtn"><a href="#">MÆRKESAGER</a></button>
+            <button class="dropbtn"><a href="Maerkesager.html">MÆRKESAGER</a>
             <div class="dropdown-content">
-                <a href="Maerkesager.html">Mærkesag 1.</a>
-                <a href="Maerkesager.html">Mærkesag 2.</a>
-                <a href="Maerkesager.html">Mærkesag 3.</a>
-            </div>
-
+                    <a href="Maerkesager.html">Mærkesag 1.</a>
+                    <a href="Maerkesager.html">Mærkesag 2.</a>
+                    <a href="Maerkesager.html">Mærkesag 3.</a>
+                </div></button>
         </div>
 
         <div class="dropdown">
             <button class="dropbtn"><a href="#">POLITIK</a></button>
             <div class="dropdown-content">
                 <a href="parti.html">Partiprogram</a>
-                <a href="vaelgererklaering.html">Vælgererklæring</a>
+                <a href="#">Vælgererklæring</a>
             </div>
         </div>
+
         <!--indholdet af brugermenu-->
         <div style="padding-left:16px">
             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
-    </div>
 
-    <!--Skift mellem at tilføje og fjerne den responsive klasse til topnav, når brugeren klikker på ikonet-->
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
+        <!--Skift mellem at tilføje og fjerne den responsive klasse til topnav, når brugeren klikker på ikonet-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
             }
-        }
-    </script>
+        </script>
 
-    <!--Indholdet i slideshow-->
-    <div class="slideshow-container">
+    </div>
+    <main>
+        <!--indhold af overskrift og billede-->
+        <div class="alt">
+            <h10>AFGIV DIN VÆLGERERKLÆRING</h10>
 
-        <div class="mySlides fade">
-            <img src="img/slide1.png" alt="vaelgererlaekring" style="width:100%">
+            <img class="info" src="img/infographic.jpg" alt="infographic" width="80%" height="auto">
+
+            <!--indhold af tekst-->
+            <h11> For at afgive din vælgererklæring i JFK21 skal du gøre en af tre følgende steps </h11>
+
+            <br>
+            <!--tekst liste-->
+            <ol class="list">
+                <li>Sende en mail til Folketingsvalg@JFK21.dk og aktivere linket du modtager 10-14 dage senere med dit NEMID</li>
+                <br>
+                <li>Du kan downloade vores app og udfylde dine detaljer og afgive din vælgererklæring på den måde. </li>
+                <br>
+                <li>Du kan også udfyde formularen nedenfor med CPR nr og en uge senere vil du modtage et brev fra indenrigsministeriet, som herefter skal underskrives og sendes til JFK. </li>
+            </ol>
+
+            <!--formular til vealgererkleaering-->
+            <div id="form-main">
+                <div id="form-div">
+                    <form class="form" id="form1">
+
+                        <p class="name">
+                            <input name="Navn" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Navn" id="name" />
+                        </p>
+
+                        <p class="email">
+                            <input name="CPR" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="CPR" />
+                        </p>
+                        <p class="email">
+                            <input name="CPR" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                        </p>
+
+
+                        <p class="text">
+                            <textarea name="Besked" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Besked"></textarea>
+                        </p>
+
+
+                        <div class="submit">
+                            <input type="submit" value="SEND" id="button-blue" />
+                            <div class="ease"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
+    </main>
 
-        <div class="mySlides fade">
-            <img src="img/slide2.png" alt="foredrag" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-            <img src="img/slide3.png" alt="jfk21" style="width:100%">
-        </div>
-
-    </div>
-    <br>
-
-    <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
-    <!--Javasript til slideshow. Viser hvor meget sekunder i timen hvor mange slid der køre-->
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active"
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-    </script>
-
-
-    <!-- call to action knapper-->
-    <div class="calltoaction">
-        <a href="vaelgererklaering.html">
-            <div id="orange">Vælgererklæring</div>
-        </a>
-        <a href="blivmedlem.html">
-            <div id="bla">Bliv medlem</div>
-        </a>
-        <a href="bidrag.html">
-            <div id="gron">Giv et bidrag</div>
-        </a>
-
-    </div>
-
-    <div class="tese">
-        <img src="img/teseforsideNY.png" alt="tese" width="100%">
-    </div>
 </body>
+
 <!--indhold af footer-->
 <footer>
+
     <!--Indhold af alt i hver flex-container-->
     <div class="flex-container">
         <div>
-
             <a name="contact">
                 <h1>Kontakt os</h1>
             </a>
+
             <div class="box">
                 <h2>Pilestræde 58, 1112 København K</h2>
                 <h3>Info@JFK21.dk</h3>
@@ -213,7 +200,7 @@
 
             <a href="blivmedlem.html">
                 <div id="example2">
-                    <h8>Blive medlem</h8>
+                    <h8>Bliv medlem</h8>
                 </div>
             </a>
 
@@ -224,5 +211,5 @@
             </a>
         </div>
     </div>
-</footer>  
+</footer> 
 </html>

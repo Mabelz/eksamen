@@ -1,0 +1,355 @@
+/*indhold af hele skærmen*/
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+/*style logo*/
+
+.logo {
+    margin-left: 45px;
+    position: relative;
+    top: 10px;
+
+}
+
+/*navigationsbar*/
+
+.topnav {
+    position: relative;
+    top: -67px;
+    right: 30px;
+}
+
+/*indholdet af navigationsbaren*/
+
+.topnav a {
+    float: right;
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+    border-bottom: 3px solid transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+}
+
+/*brugermenuen*/
+
+.topnav .icon {
+    display: none;
+
+}
+
+/*ændring af dropdown stilling*/
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+/*indholdet af dropdown menuen*/
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 30px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/*styling til dropdown-content*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/*styling til indholdet af dropdown*/
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+/*style hover til navigationsbaren*/
+
+.topnav a:hover {
+    border-bottom: 3px solid #93c9ed;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Media querries tilpasset til mobilskærm dropdown*/
+
+@media screen and (max-width: 800px) {
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* Media querries tilpasset til mobilskærm navigationsbar */
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 30px;
+        position: relative;
+        top: 40px;
+    }
+}
+
+.nr0 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: 2px solid;
+    position: relative;
+
+}
+
+.nr1 {
+    border-radius: 10px;
+    border: 2px solid;
+}
+
+/*fjerning af underlinje på tekst i sidste flex-container*/
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*style til flex-container*/
+
+.flex-container {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    display: flex;
+    background-color: #354558;
+    flex-wrap: wrap;
+}
+
+.flex-container > div {
+    width: 160px;
+    height: 1px;
+    margin: 10px;
+    padding: 120px;
+    font-size: 30px;
+    flex-wrap: wrap;
+}
+
+/*box som ligger i den første flex-container*/
+
+.box {
+    width: 270px;
+    height: 110px;
+    position: relative;
+    right: 100px;
+    top: -120px;
+    background-color: white;
+    border-radius: 5%;
+}
+
+/*tekst styling*/
+
+h1 {
+    font-size: 20px;
+    width: 160px;
+    position: relative;
+    right: 100px;
+    top: -120px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 11px;
+    position: relative;
+    top: 15px;
+    left: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 11px;
+    position: relative;
+    top: 20px;
+    left: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 11px;
+    position: relative;
+    top: 20px;
+    left: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/*ikoner----------------------*/
+
+.icons img {
+    width: 25px;
+    position: relative;
+    top: -225px;
+    right: 90px;
+}
+
+.letter img {
+    width: 25px;
+    position: relative;
+    top: -228px;
+    right: 90px;
+}
+
+.world img {
+    width: 25px;
+    position: relative;
+    top: -235px;
+    right: 90px;
+}
+
+.face img {
+    width: 50px;
+    position: relative;
+    top: -133px;
+    right: 125px;
+}
+
+.insta img {
+    width: 50px;
+    position: relative;
+    top: -189px;
+    right: 93px;
+}
+
+.you img {
+    width: 50px;
+    position: relative;
+    top: -249px;
+    right: 54px;
+}
+
+.linkedin img {
+    width: 60px;
+    position: relative;
+    top: -310px;
+    right: 22px;
+}
+
+/* styling til underpunkterne i sidste flex-container*/
+
+#example1 {
+    width: 350px;
+    height: 40px;
+    position: relative;
+    top: -120px;
+    right: 110px;
+    font-size: 15px;
+    background-color: #ed9d3f;
+    border-radius: 20px;
+}
+
+h7 {
+    position: relative;
+    top: 8px;
+    left: 95px;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+#example2 {
+    width: 350px;
+    height: 40px;
+    position: relative;
+    top: -95px;
+    right: 110px;
+    font-size: 20px;
+    background-color: #94ceea;
+    border-radius: 20px;
+}
+
+h8 {
+    position: relative;
+    top: 8px;
+    left: 115px;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+#example3 {
+    width: 350px;
+    height: 40px;
+    position: relative;
+    top: -70px;
+    right: 110px;
+    font-size: 20px;
+    background-color: #bdc546;
+    border-radius: 20px
+}
+
+h9 {
+    position: relative;
+    top: 8px;
+    left: 120px;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}

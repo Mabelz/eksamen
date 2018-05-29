@@ -1,14 +1,9 @@
-/*tilpas hele skærmen*/
+/*indhold af hele skærmen*/
 
 body {
-    margin: 0;
+    margin: 0px;
     padding: 0;
-    margin-bottom: 200px;
-}
 
-main {
-    margin-left: 3%;
-    margin-right: 3%;
 }
 
 /*style logo*/
@@ -68,7 +63,7 @@ main {
     margin: 0;
 }
 
-/*styling til dropdown-content*/
+/*style til dropdown-content*/
 
 .dropdown-content {
     display: none;
@@ -79,7 +74,7 @@ main {
     z-index: 1;
 }
 
-/*styling til indholdet af dropdown*/
+/*style til indholdet af dropdown*/
 
 .dropdown-content a {
     float: none;
@@ -100,7 +95,7 @@ main {
     display: block;
 }
 
-/* Media querries tilpasset til mobilskærm. navigationsbar*/
+/*responsive dropdown*/
 
 @media screen and (max-width: 800px) {
     .topnav a:not(:first-child),
@@ -114,7 +109,7 @@ main {
     }
 }
 
-/* Media querries tilpasset til mobilskærm*/
+/*responsive navigationsbar*/
 
 @media screen and (max-width: 600px) {
     .topnav.responsive {
@@ -149,144 +144,303 @@ main {
     }
 }
 
-/*style af hele slideshow*/
 
-* {
-    box-sizing: border-box;
+@media screen and (max-width:600px) {}
+
+main {
+    margin-left: 20%;
+    margin-right: 10%;
+    position: relative;
+    top: 110px;
+
 }
 
-.mySlides {
+
+.banner {
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid black;
+
+}
+
+/*overskrift til hver mærkesag*/
+
+.sag1 {
+    font-size: 130%;
+    position: relative;
+    top: -40px;
+    right: 230%;
+}
+
+.sag2 {
+    font-size: 130%;
+    position: relative;
+    left: 10%;
+}
+
+.sag3 {
+    font-size: 130%;
+    position: relative;
+    top: -35px;
+    right: 210%;
+}
+
+.tekst {
+    box-sizing: content-box;
+    width: 93%;
+    height: 93%;
+    border: 1px solid black;
+    line-height: 160%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+
+.rapport a {
+    position: relative;
+    right: 120px;
+    top: -40px;
+    text-decoration: underline;
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .rapport a {
+        position: relative;
+        left: 1px;
+    }
+}
+
+p {
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+li {
+
+    padding-right: 3.5%;
+}
+
+/* The Modal (background) */
+
+#myBtn {
+    width: 25%;
+    height: 25%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 3.5%;
+    margin-top: 1%;
+    float: right;
+    background-color: #94caee;
+    border-radius: 7%;
+    font-size: 100%;
+    border: 1px solid black;
+
+}
+
+.modal {
     display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 10PX;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
 }
 
-img {
-    vertical-align: middle;
-}
+/* Modal Content */
 
-/* Slideshow container */
-
-.slideshow-container {
-    max-width: 1195px;
-    position: relative;
+.modal-content {
+    background-color: #fefefe;
     margin: auto;
-    z-index: -1;
-    top: 20%;
+    padding: 20px;
+    border: 2px solid #888;
+    width: 70%;
 }
 
-.active {
-    background-color: #717171;
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-/* Fading animation */
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 100s;
-    animation-name: fade;
-    animation-duration: 0.5s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-/* Media querries tilpasset til mobilskærm*/
-
-@media only screen and (max-width: 300px) {
-    .text {
-        font-size: 11px
-    }
-}
-
-/* Media querries tilpasset til mobilskærm*/
-
-@media only screen and (max-width: 300px) {
-    .prev,
-    .next,
-    .text {
-        font-size: 11px
-    }
-}
-
-/*style call to action*/
-
-.calltoaction {
-    display: grid;
-    position: relative;
-    top: 20px;
-    grid-gap: 3%;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
-    grid-auto-rows: 10%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-}
-
-#orange {
-    background-color: #ed9d3f;
-    font-size: 20px;
-    margin: 2%;
-    padding-left: 22%;
-    padding-top: 7%;
-    padding-bottom: 7%;
-    border-radius: 10%;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-}
-
-
-#bla {
-    background-color: #94ceea;
-    font-size: 20px;
-    padding-left: 29%;
-    margin: 2%;
-    padding-top: 7%;
-    padding-bottom: 7%;
-    border-radius: 10%;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-}
-
-
-#gron {
-    background-color: #bdc546;
-    font-size: 20px;
-    padding-left: 29%;
-    padding-top: 7%;
-    margin: 2%;
-    padding-bottom: 7%;
-    border-radius: 10%;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-}
-
-}
-
-/*fjerning af underlinje på tekst i sidste flex-container*/
-
-a {
+.close:hover,
+.close:focus {
+    color: #000;
     text-decoration: none;
-    color: black;
+    cursor: pointer;
 }
 
-.tese img {
-    position: relative;
-    top: 90px;
-    margin-left: 3%;
-    width: 94%;
+/* modal 2 */
+
+#myBtn2 {
+    width: 25%;
+    height: 25%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 3.5%;
+    margin-top: 1%;
+    float: right;
+    background-color: #ed9d3f;
+    border-radius: 7%;
+    font-size: 100%;
+    border: 1px solid black;
+}
+
+.modal2 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 10PX;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.modal-content2 {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #888;
+    width: 70%;
+}
+
+/* The Close Button */
+
+.close2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* modal 3 */
+
+#myBtn3 {
+    width: 25%;
+    height: 25%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 3.5%;
+    margin-top: 1%;
+    float: right;
+    background-color: #bdc546;
+    border-radius: 7%;
+    font-size: 100%;
+    border: 1px solid black;
+}
+
+.modal3 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 10PX;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.modal-content3 {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #888;
+    width: 70%;
+}
+
+/* The Close Button */
+
+.close3 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+iframe {
+    width: 100%;
+    height: 700px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    #video {
+        width: 100%;
+        height: 400px;
+    }
+
+    #myBtn,
+    #myBtn2,
+    #myBtn3 {
+        font-size: 70%;
+        margin-top: 5.5%;
+
+    }
 }
 
 /*fjerning af underlinje på tekst i sidste flex-container*/
@@ -300,15 +454,16 @@ a {
 
 .flex-container {
     position: relative;
-    top: 150px;
+    top: 50px;
     width: 100%;
     display: flex;
     background-color: #354558;
     flex-wrap: wrap;
 }
 
+
 .flex-container > div {
-    width: 400px;
+    width: 160px;
     height: 1px;
     margin: 10px;
     padding: 120px;
@@ -346,8 +501,9 @@ h2 {
     position: relative;
     top: 15px;
     left: 45px;
+    color: black;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 h3 {
@@ -355,8 +511,9 @@ h3 {
     position: relative;
     top: 20px;
     left: 45px;
+    color: black;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 h4 {
@@ -364,8 +521,9 @@ h4 {
     position: relative;
     top: 20px;
     left: 45px;
+    color: black;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 /*ikoner----------------------*/
@@ -373,21 +531,21 @@ h4 {
 .icons img {
     width: 25px;
     position: relative;
-    top: -230px;
+    top: -225px;
     right: 90px;
 }
 
 .letter img {
     width: 25px;
     position: relative;
-    top: -235px;
+    top: -230px;
     right: 90px;
 }
 
 .world img {
     width: 25px;
     position: relative;
-    top: -243px;
+    top: -238px;
     right: 90px;
 }
 
@@ -401,21 +559,21 @@ h4 {
 .insta img {
     width: 50px;
     position: relative;
-    top: -180px;
+    top: -190px;
     right: 93px;
 }
 
 .you img {
     width: 50px;
     position: relative;
-    top: -233px;
+    top: -250px;
     right: 54px;
 }
 
 .linkedin img {
     width: 60px;
     position: relative;
-    top: -288px;
+    top: -313px;
     right: 22px;
 }
 
