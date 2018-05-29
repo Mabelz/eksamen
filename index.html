@@ -1,213 +1,128 @@
 <!DOCTYPE html>
 
- <!--sprog-->   
-<html lang="da">
-    
- <!--visningsporten for at få dit website til at se godt ud på alle enheder-->    
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-<!--repræsentere hvert tegn-->
-<meta charset="utf-8">
-    
-<!--link til CSS-->
-<link rel="stylesheet" type="text/css" href="style.css">
 
-    
+<html lang="da">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="description" content="JFK21 mangler at få indsamlet 20.000 vælgererklæring. De ønsker din hjælp til, at få dem indsamlet og dermed blive en del af partiet.">
+<meta name="keywords" content="JFK21, parti, vælgererklæring, foredrag, eksamen, multimediedesign, erhvervsakademi Aarhus,">
+<link rel="stylesheet" type="text/css" href="style.css">
 <title>Forsiden</title>
 
-    
 <head>
-    
-  
+    <!--logo placeret i headeren-->
+    <div class="logo"><a href="index.html"><img src="img/logo.png" width="180"></a></div>
 </head>
-    
+
+
 <body>
-    
-<div class="logo"><a href="index.html"><img src="logo.JPG" width="60"></a></div>  
-    
-    
-    <div class="topnav" id="myTopnav">
-         <div class="dropdown">
-            <button class="dropbtn"><a href="#">OM OS</a></button>
-               <div class="dropdown-content">
-                 <a href="personer.html">Personer</a>
-                 <a href="voreshistorie.html">Vores historie</a>
-                 <a href="blivmedlem.html">Bliv medlem</a>
-                 <a href="kontakt.html">Kontakt</a>
-                 <a href="frivillige.html">Frivillige</a>
-               </div>
-            
-    </div>
-        
-         <div class="dropdown">
-            <button class="dropbtn"><a href="#">AKTUELT</a></button>
-               <div class="dropdown-content">
-                 <a href="events.html">Events</a>
-                 <a href="maerkesag2.html">Kalender</a>
-                 <a href="maerkesag2.html">Nyhedsbrev</a>
-               </div>
-         </div>
-        
-        <div class="dropdown">
-           <button class="dropbtn"><a href="#">MÆRKESAGER</a></button>
-              <div class="dropdown-content">
-                <a href="maerkesag1.html">Mærkesag 1.</a>
-                <a href="maerkesag2.html">Mærkesag 2.</a>
-                <a href="maerkesag2.html">Mærkesag 4.</a>
-              </div>
-        </div>
-        
-        <div class="dropdown">
-           <button class="dropbtn"><a href="#">POLITIK</a></button>
-              <div class="dropdown-content">
-               <a href="partiprogram.html">Partiprogram</a>
-               <a href="vaelgererklaering.html">Vælgererklæring</a>
-              </div>
-        </div>
-        
-<div style="padding-left:16px">
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-        
+    <!--indholdet i navigationsbaren-->
+    <main>
+        <div class="topnav" id="myTopnav">
+            <div class="dropdown">
+                <button class="dropbtn"><a href="#">OM OS</a>
+             </button>
+                <div class="dropdown-content">
+                    <a href="personer.html">Personer</a>
+                    <a href="voreshistorie.html">Vores historie</a>
+                    <a href="blivmedlem.html">Bliv medlem</a>
+                    <a href="#contact">Kontakt</a>
+                </div>
+            </div>
 
-<script>
-  function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") 
-  {
-  x.className += " responsive";
-    } else 
-  {
-        x.className = "topnav";
-    }
-}
-</script>
-        
-</div>
-    
+
+            <div class="dropdown">
+                <button class="dropbtn"><a href="#">AKTUELT</a></button>
+                <div class="dropdown-content">
+                    <a href="events.html">Events</a>
+                    <a href="#">Kalender</a>
+                    <a href="nyhedsbrev.html">Nyhedsbrev</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn"><a href="#">MÆRKESAGER</a></button>
+                <div class="dropdown-content">
+                    <a href="events.html">Mærkesag 1</a>
+                    <a href="#">Mærkesag 2</a>
+                    <a href="#">Mærkesag 3</a>
+
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn"><a href="#">POLITIK</a></button>
+                <div class="dropdown-content">
+                    <a href="parti.html">Partiprogram</a>
+                    <a href="vaelgererklaering.html">Vælgererklæring</a>
+                </div>
+            </div>
+
+
+            <!--indholdet af brugermenu-->
+            <div style="padding-left:16px">
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+
+        </div>
+
+
+        <!--Slideshow-->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="img/slide1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/slide2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/slide3.png" style="width:100%">
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <!-- call to action knapper-->
+        <div class="calltoaction">
+            <a href="vaelgererklaering.html">
+                <div id="orange">Vælgererklæring</div>
+            </a>
+            <a href="blivmedlem.html">
+                <div id="bla">Bliv medlem</div>
+            </a>
+            <a href="bidrag.html">
+                <div id="gron">Giv et bidrag</div>
+            </a>
+
+        </div>
+
+        <div class="tese">
+            <img src="img/teseforsideNY.png" width="100%">
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
-    
-<footer>
- <div class="slideshow-container">
 
-<div class="mySlides fade">
-  <div class="numbertext"></div>
-  <img src="slide1.jpg" style="width:100%">
-  
-</div>
 
-<div class="mySlides fade">
-  <div class="numbertext"></div>
-  <img src="slide2.jpg" style="width:100%">
-  
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext"></div>
-  <img src="slide3.jpg" style="width:100%">
-  
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
-    
-  <div class="flex-container">
-  <div>
-      
-    <h1>Kontakt os</h1>
-      
-      
-      <div class="box">
-          <h2>Pilestræde 58, 1112 København K</h2>
-          <h3>Info@JFK21.dk</h3>
-          <h4>www.JFK21.dk</h4>
-    
-      </div>
-      
-      <div class="flexbox"></div>
-    <div class="icons">
-        <img src="homeicon.png"></div>
-    <div class="container">
-        <img src="lettericon.png"></div>
-    <div class="icon">
-        <img src="worldicon.png"></div>
-      
-</div>
-      
-      <div>
-          
-          <h1>Følg os</h1>
-     <div class="face">
-        <img src="faceicon.png"></div>
-    <div class="insta">
-        <img src="instaicon.png"></div>
-    <div class="you">
-        <img src="youicon.png"></div>   
-    <div class="twitter">
-        <img src="birdicon.png"></div>
-      </div>
-<div>
-          
-<h1>Klik her for at </h1>
-          
-        
-<div id="example1">
-<h7>Giv vælgererklæring</h7>
-</div>
- 
-  <div id="example2">   
-      <h8>Blive medlem</h8>
-          </div>
-          
-    <div id="example3">   
-      <h9>Giv et bidrag</h9>
-          </div>
-      </div>
-      
-      
-      </div>
+<br><br><br><br><br>
+<footer> 
+    <p class="spalte">hej</p>
+    <p class="spalte">hej 2</p>
+    <p class="spalte">hej 3</p>
    
-
-       
-    
 </footer>
-    
-</html>
+
+
+
+
+
+
